@@ -1,0 +1,87 @@
+public class Company {
+    String name;
+    Address headquarters;
+    Employee employee;
+    Customer customer;
+    Truck truck;
+    Car car;
+    Motorbike motorbike;
+}
+
+public class Employee extends Person{
+    
+}
+
+public class Subcontractor extends Employee{
+}
+
+public class Subcontractor extends Customer{
+}
+
+public class Person{
+    String name;
+    String email;
+    address;
+}
+
+public class Customer extends Person{
+    BankAccount bankAccount;
+}
+
+public class BankAccount{
+    UnlimitedNatural number;
+    String despositor;
+    String bank;
+}
+
+public class Address{
+    String street;
+    String postalCode;
+    String city;
+} 
+
+public class VehicleRentalService extends Service{
+    Vehicle vehicle;
+
+    offerCare()
+    offerMotorbike()
+    offerTruck()
+}
+
+public class Service{
+    Customer customer;
+}
+
+public interface Rentable{
+    rent()
+}
+
+public class Vehicle implements Rentable{
+}
+
+public class Truck extends Vehicle{
+    UnlimitedNatural weight;
+    UnlimitedNatural power;
+    String manufacturer;
+    String regNo;
+}
+
+public class Car{
+    CarKind kind;
+    UnlimitedNatural noSeats;
+    UnlimitedNatural power;
+    String manufacturer;
+    String regNo;
+}
+
+public class motorbike{
+    MbKind kind;
+    UnlimitedNatural cylinderCap;
+    UnlimitedNatural power;
+    String manufacturer;
+    String regNo;
+}
+
+//How do we know the TYPE of the varabile specified in the lines
+//do we specify the dimonds
+//do we need to specify what is returned (void - dotted line)
